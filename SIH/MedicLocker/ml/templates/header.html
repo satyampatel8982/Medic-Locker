@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -16,11 +17,12 @@
 </head>
 
 <body>
+  <!-- header including urls -- >
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
             <img src="img/profile.png" width="30" height="30" alt="">
         </a>
-        <a class="navbar-brand" href="#">Medic Locker</a>
+        <a class="navbar-brand" href="{% url 'index' %}">Medic Locker</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"></a>
@@ -40,19 +42,19 @@
                         Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="disease.html">Major Diseases</a>
-                        <a class="dropdown-item" href="addiction.html">Major Addiction Issues</a>
-                        <a class="dropdown-item" href="life.html">Helathy LifeStyle</a>
+                        <a class="dropdown-item" href="{% url 'disease' %}">Major Diseases</a>
+                        <a class="dropdown-item" href="{% url 'addiction' %}addiction.html">Major Addiction Issues</a>
+                        <a class="dropdown-item" href="{% url 'life' %}life.html">Helathy LifeStyle</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="write.html">Write for Us</a>
-                        <a class="dropdown-item" href="support.html">Support US</a>
+                        <a class="dropdown-item" href="{% url 'write' %}write.html">Write for Us</a>
+                        <a class="dropdown-item" href="{% url 'support' %}support.html">Support US</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -77,13 +79,13 @@
                     </button>
                 </div>
                 <div class="modal-body ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="{% url 'disease' %}" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Login Type
                     </a>
                     <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="doc_login.html">Doctor</a>
-                        <a class="dropdown-item" href="pat_login.html">Patient</a>
+                        <a class="dropdown-item" href="{% url 'doc_login' %}">Doctor</a>
+                        <a class="dropdown-item" href="{% url 'pat_login' %}">Patient</a>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -100,7 +102,7 @@
                 <p>© 2020-2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
             </footer>
         </main>
-    
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -114,5 +116,5 @@
             crossorigin="anonymous"></script>
     </body>
     <script src="js/myscripts.js"></script>
-    
+
     </html>
