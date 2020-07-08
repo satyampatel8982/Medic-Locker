@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Contact Us</title>
+    <link rel="icon" href="img/profile.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: url(img/contact2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: table;
+            font-family: Quicksand;
+        }
+
+        .btn5 {
+            padding: 20px 32px;
+            font-size: 16px;
+            background: #3676ec;
+            border: none;
+            border-radius: 4px;
+            margin-top: 30px;
+            color: #fff;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        .he {
+            font-size: 70px;
+        }
+
+        .pa {
+            font-size: 20px;
+        }
+
+        span {
+            color: #3676ec;
+            font-family: candara;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        section .container {
+            position: relative;
+            min-width: 1100px;
+            min-height: 550px;
+            display: flex;
+            z-index: 1000;
+
+        }
+
+        section .container .contactinfo {
+            position: absolute;
+            top: 40px;
+            width: 350px;
+            height: calc(100% - 80px);
+            background: #0f3959;
+            z-index: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        section .container .contactinfo h2 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        section .container .contactinfo .info {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        section .container .contactinfo .info li {
+            position: relative;
+            list-style: none;
+            display: flex;
+            margin: 20px 0;
+            cursor: pointer;
+            align-items: flex-start;
+        }
+
+        section .container .contactinfo .info li span:nth-child(1) {
+            width: 30px;
+            min-width: 30px;
+        }
+
+        section .container .contactinfo .info li span:nth-child(1) img {
+            max-width: 100%;
+            filter: invert(1);
+            opacity: 0.5;
+        }
+
+        section .container .contactinfo .info li span:nth-child(2) {
+            color: #fff;
+            margin-left: 10px;
+            font-weight: 300;
+            opacity: 0.5;
+        }
+
+        section .container .contactinfo .info li:hover span:nth-child(1) img,
+        section .container .contactinfo .info li:hover span:nth-child(2) {
+            opacity: 1;
+        }
+
+        section .container .contactinfo .sci {
+            position: relative;
+            display: flex;
+        }
+
+        section .container .contactinfo .sci li {
+            list-style: none;
+            margin-right: 10px;
+        }
+
+        section .container .contactinfo .sci li a {
+            text-decoration: none;
+        }
+
+        section .container .contactinfo .sci li a img {
+            filter: invert(1);
+            opacity: 0.5;
+        }
+
+        section .container .contactinfo .sci li:hover a img {
+            opacity: 1;
+        }
+
+        section .container .contactform {
+            position: absolute;
+            padding: #fff;
+            background: #fff;
+            margin-left: 150px;
+            padding-left: 250px;
+            width: calc(100% - 150px);
+            height: 100%;
+            box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        section .container .contactform h2 {
+            color: #0f3959;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        section .container .contactform .formbox {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
+
+        section .container .contactform .formbox .inputbox {
+            position: relative;
+            margin: 0 0 35px 0;
+        }
+
+        section .container .contactform .formbox .inputbox.w50 {
+            width: 47%;
+        }
+
+        section .container .contactform .formbox .inputbox.w100 {
+            width: 100%;
+        }
+
+        section .container .contactform .formbox .inputbox input,
+        section .container .contactform .formbox .inputbox textarea {
+            width: 100% !important;
+            padding: 5px 0;
+            resize: none;
+            font-size: 18px;
+            font-weight: 300;
+            color: #333;
+            border: none;
+            border-bottom: 1px solid #777;
+            outline: none;
+        }
+
+        section .container .contactform .formbox .inputbox textarea {
+            min-height: 120px;
+        }
+
+        section .container .contactform .formbox .inputbox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 18px;
+            font-weight: 300;
+            color: #333;
+            transition: 0.5%;
+            pointer-events: none;
+        }
+
+        section .container .contactform .formbox .inputbox input:focus~span,
+        section .container .contactform .formbox .inputbox textarea:focus~span,
+        section .container .contactform .formbox .inputbox input:valid~span,
+        section .container .contactform .formbox .inputbox textarea:valid~span {
+            transform: translateY(-20px);
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #ff568c;
+        }
+
+        section .container .contactform .formbox .inputbox input[type="submit"] {
+            position: relative;
+            cursor: pointer;
+            background: #0f3959;
+            color: #fff;
+            border: none;
+            max-width: 150px;
+            padding: 12px;
+        }
+
+        section .container .contactform .formbox .inputbox input[type="submit"]:hover {
+            background: #ff568c;
+        }
+        .ftr{
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/profile.png" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand" href="#">Medic Locker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="disease.html">Major Diseases</a>
+                        <a class="dropdown-item" href="addiction.html">Major Addiction Issues</a>
+                        <a class="dropdown-item" href="life.html">Helathy LifeStyle</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="write.html">Write for Us</a>
+                        <a class="dropdown-item" href="support.html">Support US</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0 bt" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-outline-danger bt" data-toggle="modal" data-target="#LoginModal">LOGIN</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade login" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Medic Locker</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login Type
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="doc_login.html">Doctor</a>
+                        <a class="dropdown-item" href="pat_login.html">Patient</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="he"><span>C</span>ontact U<span>s</span></h1>
+            <br>
+            <p class="pa"><span>Medical Locker</span> that <span>Connects</span> You With Your <span>Health</span></p>
+            <hr>
+            <br><br><br>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-none d-sm-block mb-5 pb-4">
+            <div id="map" style="height: 480px;"></div>
+            <script>
+                function initMap() {
+                    var uluru = {
+                        lat: 23.168770,
+                        lng: 79.931847
+                    };
+                    var grayStyles = [{
+                        featureType: "all",
+                        stylers: [{
+                            saturation: -90
+                        },
+                        {
+                            lightness: 50
+                        }
+                        ]
+                    },
+                    {
+                        elementType: 'labels.text.fill',
+                        stylers: [{
+                            color: '#ccdee9'
+                        }]
+                    }
+                    ];
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        center: {
+                            lat: 23.168770,
+                            lng: 79.931847
+                        },
+                        zoom: 9,
+                        styles: grayStyles,
+                        scrollwheel: false
+                    });
+                }
+            </script>
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
+                </script>
+
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="contactinfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="img/contact/location.png"></span>
+                            <span>
+                                Madan Mahal , 118 cn<br>
+                                Jabalpur , Madhya-Pradesh <br>
+                                India
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="img/contact/mail.png"></span>
+                            <span>For any Query mail us at :- <br>
+                                Mediclocker@sih.gov.in
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="img/contact/call.png"></span>
+                            <span>
+                                1800-800-555-786<br>
+                                Sun to Sat (24 x 7) Avialable
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="#"><img src="img/contact/fb.png"></a></li>
+                    <li><a href="#"><img src="img/contact/goo.png"></a></li>
+                    <li><a href="#"><img src="img/contact/twit.png"></a></li>
+                    <li><a href="#"><img src="img/contact/pin.png"></a></li>
+                    <li><a href="#"><img src="img/contact/inst.png"></a></li>
+                    <li><a href="#"><img src="img/contact/ld.png"></a></li>
+                </ul>
+            </div>
+            <div class="contactform">
+                <h2>Send a Message</h2>
+                <div class="formbox">
+                    <div class="inputbox w50">
+                        <input type="text" name="" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input type="text" name="" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input type="text" name="" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input type="text" name="" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputbox w100">
+                        <textarea name="" required></textarea>
+                        <span>Write Your Message here...</span>
+                    </div>
+                    <div class="inputbox w100">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="container ftr">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,187 @@
+<html>
+
+<head>
+  <title>Patient SignUp</title>
+  <link rel="icon" href="img/profile.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    body {
+      background: url(img/pat111.jpg);
+      background-size: cover;
+      width: 150%;
+      margin-top: 150px !important;
+    }
+
+    .register-left {
+      text-align: center;
+      color: #fff;
+      padding: 30px;
+    }
+
+    .register-left img {
+      margin-top: 50px;
+      margin-bottom: 18px;
+      width: 80px;
+      animation: mover 1s infinite alternate;
+    }
+
+    .register-left p {
+      padding: 20px 20px 0;
+    }
+
+    .register-left .btn-primary {
+      border-radius: 1.5cm;
+      border: none;
+      width: 120px;
+      background: #f8f8f8;
+      font-weight: 600;
+      color: #555;
+      margin-top: 30px;
+      padding: 10px;
+    }
+
+    .register-left .btn-primary:hover {
+      background: #b0eef0e1;
+    }
+
+    .register-right {
+      border: none;
+      background: #f8f8f8;
+      border-top-left-radius: 10% 50%;
+      border-bottom-left-radius: 10% 50%;
+      padding: 50px;
+    }
+
+    .register-right h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .register-form {
+      padding: 1px;
+    }
+
+    .register-right .btn-primary {
+      float: right;
+      border-radius: 1.5cm;
+      border: none;
+      width: 120px;
+      background: #61d3e2;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 20px;
+      padding: 10px;
+    }
+
+    .register-right .btn-primary:hover {
+      background: #054085;
+    }
+
+    @keyframes mover {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .style {
+      width: 40%;
+      margin-right: 900;
+      position: absolute;
+      bottom: 170;
+      right: 0;
+      animation: slidein 2s ease-in-out;
+      z-index: 8;
+    }
+    @keyframes slidein {
+      0% {
+        left: -2000px;
+        opacity: 0;
+      }
+
+      100% {
+        left: 30px;
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-20 offset=md-1">
+        <div class="row">
+          <div class="col-md-5 register-left">
+            <img src="img/icon.png">
+            <h3 style="color: black;">Join us</h3>
+            <p style="color: black;">To know more about <strong>Medic Locker</strong> click below</p>
+            <button type="button" class="btn btn-primary"><a href="about.html">About us</a></button>
+          </div>
+          
+          <div class="col-md-7 register-right">
+            <h2>Get patient Account</h2>
+            <div class="register-form">
+              <div class="from-group">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="register-form">
+                <div class="from-group">
+                  <input type="text" class="form-control" placeholder="User id : Aadhar/Voter-id/PAN">
+                </div>
+                <div class="register-form">
+                  <div class="from-group">
+                    <input type="text" class="form-control" placeholder="Age">
+                  </div>
+                  <div class="register-form">
+                    <div class="from-group">
+                      <input type="text" class="form-control" placeholder="Address">
+                    </div>
+                    <div class="register-form">
+                      <div class="from-group">
+                        <input type="text" class="form-control" placeholder="Phone number">
+                      </div>
+                      <div class="register-form">
+                        <div class="from-group">
+                          <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="register-form">
+                          <div class="from-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                          </div>
+                          <button type="button" class="btn btn-primary">Sign Up</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="style">
+    <h1 style="color: #1b0b57;">Some instruction for Patients: </h1>
+    <br><br>
+    <ul style="color : #331705">
+      <strong>
+        <li>User ID will accept only one of three given documents. </li>
+        <br>
+        <li>Adress must same as mentioned in the given document</li>
+        <br>
+        <li>Phone Number and E-Mail must be correct and related to user</li>
+        <br>
+        <li>Password must contain atleast 8 word and special charaacter too,</li>
+    </ul>
+    </strong>
+  </div>
+</body>
+
+</html>

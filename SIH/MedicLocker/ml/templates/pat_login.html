@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title> Patient Login</title>
+    <link rel="icon" href="img/profile.png">
+    <script src="https://kit.fontawesome.com/636830f28d.js" crossorigin="anonymous"></script>
+    <style>
+        @import"https://stackpath.bootstrapcdn.com/bootstrap/4.7.0/css/bootstrap.min.css";
+        body{
+            margin : 0;
+            padding : 0;
+            font-family: "Candara",sans-serif;
+            background: url(img/pat1.jpg) no-repeat;
+            background-size: cover;
+        }
+        .login-box{
+            width: 280px;
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .login-box h1{
+            float: left;
+            font-size: 40px;
+            border-bottom: 6px solid #4caf50;
+            margin-bottom: 50px;
+            padding: 13px 0;
+        }
+        .textbox{
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 8px 0;
+            margin: 8px 0;
+            border-bottom: 1px solid #4caf50;
+        }
+        .textbox i{
+            width: 26px;
+            float: left;
+            text-align: center;
+        }
+        .textbox input{
+            border: none;
+            outline: none;
+            background: none;
+            color: black;
+            font-size: 18px;
+            width: 80%;
+            float: left;
+            margin: 10px;
+        }
+        .img{
+            transform: translate(10%,50%);
+        }
+        .icons{
+            transform: translate(-35%,250%)
+        }
+        .btn{
+            position: relative;
+            display: block;
+            color : black;
+            font-size: 14px;
+            font-family: "montserrat";
+            text-decoration: none;
+            margin: 30px 0;
+            border: 1px solid #4caf50;
+            padding: 14px 60px;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 1s all ease;
+        }
+        .btn::before{
+            background: #4caf50;
+            content: "";
+            width:100%;
+            height: 100%;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            transition: all 0.6s ease;
+        }
+        .btn1::before{
+            width:100%;
+            height:0;
+            transform: translate(-50%,-50%) rotate(-45deg);
+        }
+        .btn1:hover::before{
+            height: 550%;
+        }
+        .option{
+            color: black;
+            font-size: 14px;
+            margin: 20px 0 0;
+        }
+        .option a{
+            text-decoration: none;
+            color: #06c5cf;
+        }
+        .eye{
+            position:absolute;
+            margin-top: 3%;
+        }
+        #hide1{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>LOGIN</h1>
+        <img class="mb-4 img" src="img/profile.png" alt="" width="72" height="75">
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-twitter-square"></i>
+        </div>
+        <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Patient ID" name="" value="">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="password" name="" value="" id="myinput">
+            <span class="eye" onclick="myfunction()">
+                <i id="hide1" class="fas fa-eye"></i>
+                <i id="hide2" class="fas fa-eye-slash"></i>
+                </span>
+        </div>
+        <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+        <a href="" class="btn btn1">SIGN IN</a>
+        <p class="option">Not Registered? <a href="pat_signup.html">Create Account</a></p>
+        <p class="mt-5 mb-3 text-muted">© 2020-2021</p>
+    </div>
+    <script>
+        function myfunction(){
+            var x = document.getElementById("myinput")
+            var y = document.getElementById("hide1")
+            var z = document.getElementById("hide2")
+            
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

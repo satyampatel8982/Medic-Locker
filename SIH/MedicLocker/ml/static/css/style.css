@@ -1,0 +1,111 @@
+.first-slide{
+   width: 100%;
+   height: 30%;
+}
+.txt{
+   color:#b75171;
+   font-family: "candara";
+}
+.bt{
+   font-family: impact,"candara";
+}
+
+.txtp{
+   color: #f70c53;
+   font-family: "fantasy";
+   margin-left: 15%;
+}
+span {
+   color: #13bfb1;
+   margin-left: 20%;
+   font-family: "Roboto";
+}
+.lft{
+   margin-left: 40%;
+}
+.txt1{
+   color:#b75171;
+   font-family: "candara";
+   margin-left: 15%;
+}
+.bt1{
+   font-family: impact,"candara";
+   margin-left: 10%;
+}
+.mid{
+   margin-left: 20%;
+   margin-right: 20%;
+}
+.about{
+   background-image: url();
+}
+.head{
+   background-color: #abe6ee;
+   font-family: "candara";
+}
+.hd{
+   background-color:#abe6ee;
+   font-family: "candara";
+   text-align: center;
+}
+.tt{
+   color: #8d7f87;
+   font-family: "fantasy";
+}
+.tt1{
+   color: #860637;
+   font-weight: 700;
+}
+.cn{
+   background-color:#abe6ee;
+   font-family: "candara";
+}
+.style {
+   width: 10%;
+   position: relative;
+   bottom: 0;
+   right: -900px;
+   z-index: 8;
+}
+.register img{
+   margin-top: 10px;
+   margin-bottom: 18px;
+   width: 100px;
+   animation: mover 1s infinite alternate;
+ }
+@keyframes mover{
+   0%{transform: translateY(0);}
+   100%{transform: translateY(-20px);}
+ }
+ .i1{
+    width: 70%;
+    margin-left: 10%;
+ }
+ .m{
+    margin-top: 3%;
+ }
+.hx{
+   color: #031938;
+}
+.pm{
+   color: #031631;
+   font-size: 20px;
+   font-family: candara;
+   font-weight: 400;
+}
+.sm{
+   color: #031938;
+   margin-left: 25%;
+   font-size: 50px;
+}
+.sm1{
+   margin-left: 25%;
+   font-size: 22px;
+}
+.bt90{
+   margin-left: 25%;
+   font-family: impact,candara;
+}
+.cd{
+   margin-left:2cm;
+}

@@ -14,8 +14,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include # include is defined in another file
+from django.conf.urls.static import static  #static for adding the static
+from django.conf import settings # it is a django feature
+from django.views.generic import RedirectView # redirectviews to default home page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('ml/', include("ml.urls")), #aditional include path to map urls
+    path('accounts/', include('django.contrib.auth.urls')),  # adding accounts urls in application
+    path('', RedirectView.as_view(url='/ml/', permanent=True)), #it will add a new direction to page
+
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+          # it is using for the noraml settings
+          # adding Static file content to the site

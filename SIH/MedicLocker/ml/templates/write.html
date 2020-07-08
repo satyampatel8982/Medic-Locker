@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Write For Us</title>
+    <link rel="icon" href="img/profile.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f2f2f2;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            position: relative;
+            margin: 20px 0;
+            width: 300px;
+            height: 400px;
+            background: #fff;
+            transform-style: preserve-3d;
+            transform: perspective(2000px);
+            transition: 1s;
+            box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+        }
+
+        .card:hover {
+            transform: perspective(2000px) rotate(-10deg);
+            box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+        }
+
+        .card .imgbox {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            transform-origin: left;
+            z-index: 1;
+            transition: 1s;
+        }
+
+        .card:hover .imgbox {
+            transform: rotateY(-135deg);
+        }
+
+        .card .imgbox.img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .card .details {
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .inputbox input[type="submit"] {
+            position: relative;
+            cursor: pointer;
+            background: #0f3959;
+            color: #fff;
+            border: none;
+            max-width: 150px;
+            padding: 12px;
+        }
+
+        .inputbox.w100 {
+            width: 100%;
+        }
+
+        span {
+            color: #3676ec;
+            font-family: candara;
+        }
+
+        .inputbox .w100 {
+            max-width: 100%;
+            max-height: 200%;
+            margin-top: 10cm;
+        }
+
+        .inputbox {
+            position: relative;
+            margin: 0 0 35px 0;
+        }
+
+        .inputbox input,
+        .inputbox textarea {
+            width: 100% !important;
+            padding: 5px 0;
+            resize: none;
+            font-size: 12px;
+            font-weight: 300;
+            color: #333;
+            border: none;
+            border-bottom: 1px solid #777;
+            outline: none;
+        }
+
+        .inputbox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 14px;
+            font-weight: 300;
+            color: #333;
+            transition: 0.5%;
+            pointer-events: none;
+        }
+
+        .inputbox input:focus~span,
+        .inputbox textarea:focus~span,
+        .inputbox input:valid~span,
+        .inputbox textarea:valid~span {
+            transform: translateY(-20px);
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #ff568c;
+        }
+        .hh{
+            font-family: candara;
+
+            color: #0f3959;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/profile.png" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand" href="#">Medic Locker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="disease.html">Major Diseases</a>
+                        <a class="dropdown-item" href="addiction.html">Major Addiction Issues</a>
+                        <a class="dropdown-item" href="life.html">Helathy LifeStyle</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="write.html">Write for Us</a>
+                        <a class="dropdown-item" href="support.html">Support US</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0 bt" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-outline-danger bt" data-toggle="modal" data-target="#LoginModal">LOGIN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade login" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Medic Locker</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login Type
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="doc_login.html">Doctor</a>
+                        <a class="dropdown-item" href="pat_login.html">Patient</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="imgbox">
+                <img src="img/w1.png">
+            </div>
+            <div class="details">
+                <h2>Give Reviews</h2>
+                <div class="inputbox w100">
+                    <textarea name="" required></textarea>
+                    <span>Write here...</span>
+                </div>
+                <div class="inputbox w100">
+                    <input type="submit" value="Send Your Review">
+                </div>
+                <h2 class="hh">Thanks for coming to give your review</h2>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

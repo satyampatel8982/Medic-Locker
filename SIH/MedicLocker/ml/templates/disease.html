@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Major Disease</title>
+    <link rel="icon" href="img/profile.png">
+    <style>
+        .head {
+            background: #f18547;
+            color: #fff;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .h {
+            color: #1c1d5a;
+        }
+
+        .p {
+            font-size: 10px;
+        }
+
+        .pp {
+            margin-left: 60%;
+        }
+
+        .style {
+            width: 60%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            animation: slidein 1s ease-in-out;
+            z-index: 8;
+        }
+
+        @keyframes slidein {
+            0% {
+                right: -2000px;
+                opacity: 0;
+            }
+
+            100% {
+                right: 0;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/profile.png" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand" href="#">Medic Locker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="disease.html">Major Diseases</a>
+                        <a class="dropdown-item" href="addiction.html">Major Addiction Issues</a>
+                        <a class="dropdown-item" href="life.html">Helathy LifeStyle</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="write.html">Write for Us</a>
+                        <a class="dropdown-item" href="support.html">Support US</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0 bt" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-outline-danger bt" data-toggle="modal" data-target="#LoginModal">LOGIN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade login" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Medic Locker</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login Type
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="doc_login.html">Doctor</a>
+                        <a class="dropdown-item" href="pat_login.html">Patient</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="img/dis.jpg" alt="">
+        <h2 class="head">What's Killing India? Knowing Top Killer Death Diseases in India</h2>
+    </div>
+    <br><br>
+    <div class="container">
+        <h2 class="h">What's Killing India? Knowing Major Diseases in India </h2>
+        <p class="p">March 2018</p>
+        <br>
+        <h4>Here is List of some of the Major Diseases in India : </h4>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <ul>
+                        <li>Pneumonia</li>
+                        <li>Diarrhea</li>
+                        <li>Malaria</li>
+                        <li>Measles</li>
+                        <li>HIV/AIDS</li>
+                        <li>Perinatal</li>
+                        <li>Others..</li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <img class="style" src="img/graph1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <br>
+            <h4>1. Pneumonia : </h4>
+            <p>Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with
+                fluid or pus (purulent material), causing cough with phlegm or pus, fever, chills, and difficulty
+                breathing. A variety of organisms, including bacteria, viruses and fungi, can cause pneumonia.</p>
+            <p>Pneumonia can range in seriousness from mild to life-threatening. It is most serious for infants and
+                young children, people older than age 65, and people with health problems or weakened immune systems.
+            </p>
+            <h5>Symptoms :</h5>
+            <p>The signs and symptoms of pneumonia vary from mild to severe, depending on factors such as the type of
+                germ causing the infection, and your age and overall health. Mild signs and symptoms often are similar
+                to those of a cold or flu, but they last longer.</p>
+            <p>Signs and symptoms of pneumonia may include :</p>
+            <ul>
+                <li>Chest pain when you breathe or cough</li>
+                <li>Confusion or changes in mental awareness (in adults age 65 and older)</li>
+                <li>Cough, which may produce phlegm</li>
+                <li>Cough, which may produce phlegm</li>
+                <li>Shortness of breath</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h4>2. Diarrhea : </h4>
+            <p>Diarrhea, also spelled diarrhoea, is the condition of having at least three loose, liquid, or watery
+                bowel movements each day. It often lasts for a few days and can result in dehydration due to fluid loss.
+                Signs of dehydration often begin with loss of the normal stretchiness of the skin and irritable
+                behaviour.</p>
+            <p>This can progress to decreased urination, loss of skin color, a fast heart rate, and a decrease in
+                responsiveness as it becomes more severe.[2] Loose but non-watery stools in babies who are exclusively
+                breastfed, however, are normal</p>
+            <h5>Symptoms : </h5>
+            <ul>
+                <li>Abdominal cramps.</li>
+                <li>Fever.</li>
+                <li>Blood in the stool.</li>
+                <li>Nausea.</li>
+                <li>Urgent need to have a bowel movement.</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h4>3. Malaria : </h4>
+            <p>Malaria is a life-threatening disease. It's typically transmitted through the bite of an infected
+                Anopheles mosquito. Infected mosquitoes carry the Plasmodium parasite. When this mosquito bites you, the
+                parasite is released into your bloodstream.</p>
+            <p>Once the parasites are inside your body, they travel to the liver, where they mature. After several days,
+                the mature parasites enter the bloodstream and begin to infect red blood cells.
+
+                Within 48 to 72 hours, the parasites inside the red blood cells multiply, causing the infected cells to
+                burst open.
+
+                The parasites continue to infect red blood cells, resulting in symptoms that occur in cycles that last
+                two to three days at a time.
+
+            </p>
+            <p>Malaria is typically found in tropical and subtropical climates where the parasites can live. The World
+                Health Organization (WHO)Trusted Source states that, in 2016, there were an estimated 216 million cases
+                of malaria in 91 countries.</p>
+            <h5>Symptoms :</h5>
+            <ul>
+                <li>shaking chills that can range from moderate to severe.</li>
+                <li>High Fever.</li>
+                <li>Profuse Sweating.</li>
+                <li>Vomiting.</li>
+                <li>Muscle Pain</li>
+            </ul>
+        </div>
+        <div>
+            <h4>4. Measles : </h4>
+            <p>Measles is a viral disease that can spread rapidly.
+
+                Also known as rubeola or morbilli, measles is an endemic disease, meaning it is continually present in a
+                community, and many people develop resistance.
+
+                It is an unpleasant condition but one that normally passes without treatment within 7 to 10 days.
+
+                After a bout of measles, a person gains immunity for the rest of their life. They are very unlikely to
+                contract measles a second time.</p>
+            <p>Measles is a highly contagious infectious disease caused by measles virus. Symptoms usually develop 10–12
+                days after exposure to an infected person and last 7–10 days. Initial symptoms typically include fever,
+                often greater than 40 °C (104 °F), cough, runny nose, and inflamed eyes.</p>
+            <p>Vaccination prevents many cases of measles around the world. The World Health Organization (WHO) estimate
+                that 2.6 million people who have not had the vaccine die of measles every year.</p>
+            <h5>Symptoms :</h5>
+            <p>The symptoms of measles always include fever and at least one of the four Cs:</p>
+            <ul>
+                <li>Cough.</li>
+                <li>runny nose</li>
+                <li>Conjunctivitis.</li>
+                <li>Koplik’s spots, or very small grayish-white spots with bluish-white centers in the mouth, insides of
+                    cheeks, and throat</li>
+            </ul>
+            <p>Symptoms will appear about 9 to 11 days after initial infection.</p>
+        </div>
+        <div>
+            <h4>5. HIV/AIDS :</h4>
+            <p>HIV stands for human immunodeficiency virus. It is the virus that can lead to acquired immunodeficiency
+                syndrome or AIDS if not treated. Unlike some other viruses, the human body can’t get rid of HIV
+                completely, even with treatment. So once you get HIV, you have it for life.</p>
+            <p>HIV is a virus spread through certain body fluids that attacks the body's immune system, specifically the
+                CD4 cells, often called T cells. Over time, HIV can destroy so many of these cells that the body can't
+                fight off infections and disease.</p>
+            <p>HIV attacks the body’s immune system, specifically the CD4 cells (T cells), which help the immune system
+                fight off infections. Untreated, HIV reduces the number of CD4 cells (T cells) in the body, making the
+                person more likely to get other infections or infection-related cancers. Over time, HIV can destroy so
+                many of these cells that the body can’t fight off infections and disease. These opportunistic infections
+                or cancers take advantage of a very weak immune system and signal that the person has AIDS, the last
+                stage of HIV infection.</p>
+            <h5>Symptoms : </h5>
+            <ul>
+                <li>headaches and other aches and pains.</li>
+                <li>swollen lymph nodes.</li>
+                <li>recurrent oral or vaginal yeast infections.</li>
+                <li>pneumonia.</li>
+                <li>About 90 percent of people with HIV experience changes to their skin. Rash is often one of the first
+                    symptoms of HIV infection.</li>
+            </ul>
+        </div>
+        <div>
+            <h4>6. Perinatal :</h4>
+            <p>The word “perinatal” refers to the time before and after the birth of a child. Perinatal depression
+                includes depression that begins during pregnancy (called prenatal depression) and depression that begins
+                after the baby is born (called postpartum depression).</p>
+            <p>Perinatal depression is a real medical illness and can affect any mother—regardless of age, race, income,
+                culture, or education. Women are not to blame or at fault for having perinatal depression: it is not
+                brought on by anything a mother has or has not done. Perinatal depression does not have a single cause.
+                Research suggests that perinatal depression is caused by a combination of genetic and environmental
+                factors. Life stress (for example, demands at work or experiences of past trauma), the physical and
+                emotional demands of childbearing and caring for a new baby, and changes in hormones that occur during
+                and after pregnancy can contribute to the development of perinatal depression. In addition, women are at
+                greater risk for developing perinatal depression if they have a personal or family history of depression
+                or bipolar disorder or if they have experienced perinatal depression with a previous pregnancy.</p>
+            <h5>Symptoms :</h5>
+            <ul>
+                <li>Persistent sad, anxious, or “empty” mood</li>
+                <li>Fatigue or abnormal decrease in energy</li>
+                <li>Aches or pains, headaches, cramps, or digestive problems that do not have a clear physical cause or
+                    do not ease even with treatment</li>
+                <li>Thoughts about death, suicide, or harming oneself or the baby</li>
+                <li>Difficulty concentrating, remembering, or making decisions</li>
+            </ul>
+        </div>
+        <div>
+            <h4>7. Others :</h4>
+            <p>There are many other dangerous diseases in India which are responsible for the death of the peoples and
+                effect the people very much like mentioned below : </p>
+            <br>
+            <ul>
+                <li><strong>Tuberculosis (TB) : </strong> Tuberculosis (TB) is an infectious disease caused by
+                    Mycobacterium
+                    tuberculosis. . Tuberculosis commonly affects the lungs, but can also affect other parts of the
+                    body. It
+                    spreads from person to person through the air, when people who are infected with TB infection cough,
+                    sneeze or otherwise transmit respiratory fluids through the air. It is a disease that can be cured
+                    with
+                    proper treatment</li><br>
+                <li><strong>Cancer : </strong> Cancer is a group of diseases characterized by uncontrolled cell division
+                    that leads to abnormal tissue growth. Many a times, people often use the terms cancer and tumor
+                    synonymously. But all tumours are not cancerous.</li><br>
+                <li><strong>Stroke :</strong> A stroke occurs when the artery in your brain leaks or gets blocked. The
+                    symptoms of stroke include sudden numbness and confusion. It also causes vision loss and weakness.
+                    Read below in detail the symptoms, causes and preventive measures of Stroke.</li><br>
+                <li><strong>Diabetes :</strong> Diabetes affects insulin production and use. There are two types of
+                    Diabetes-Type 1 where the pancreas does not produce enough insulin and Type 2 where enough insulin
+                    is nor produced or it cannot be used effectively. Diabetes is a life-threatening disease.</li><br>
+                <li><strong>Dengue : </strong> Dengue is also called as the breakbone fever. A mosquito-borne viral
+                    disease occurring in tropical and subtropical areas.
+                    Those who become infected with the virus a second time are at a significantly greater risk of
+                    developing severe disease.
+                    Symptoms include high fever, headache, rash and muscle and joint pain. In severe cases there is
+                    serious bleeding and shock, which can be life threatening.
+                    Treatment includes fluids and pain relievers. Severe cases require hospital care.</li><br>
+                <li><strong>Alzheimer’s Disease :</strong> With Alzheimer’s disease comes not only loss of memory, but
+                    also loss of life in many cases. The progressive disease destroys memory and interrupts in
+                    activities like thinking, reasoning, etc.</li>
+            </ul>
+            and Many more......
+        </div>
+        <br>
+        <hr><br>
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
