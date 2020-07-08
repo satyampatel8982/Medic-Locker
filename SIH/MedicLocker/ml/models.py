@@ -25,7 +25,7 @@ class PatInfo(models.Model):
     addharNumber = models.CharField(max_length = 16 , verbose_name = "Enter Addhar Number ")
     city         = models.CharField(max_length = 255 , verbose_name = "Current Living City ")
     state        = models.CharField(max_length = 255 , verbose_name = "Current living State ")
-    country      = models.CharField(max_lenght = 255 , verbose_name = "Enter Your Country")
+    country      = models.CharField(max_length = 255 , verbose_name = "Enter Your Country")
     address      = models.CharField(max_length = 255 , verbose_name = "Enter you Address ")
     # ## ## ## _____________  other human related information _____________  ## ## ## #
     fingerPrint  = models.CharField(max_length = 155)
@@ -36,7 +36,7 @@ class PatInfo(models.Model):
           ('Indus','Industrial Area'),
           ('N','Fress / Normal'),
           )
-    surrounding  = models.CharField(max_length=1,choices=area , default='3')
+    surrounding  = models.CharField(max_length=5,choices=area , default='2')
     level = (
           ('1','Low'),
           ('2','Normal'),
